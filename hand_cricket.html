@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>hand_cricket</title>
+    <style>
+        .hide {
+            display: none;
+        }
+
+        .show {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="start-screen">
+
+    </div>
+    <div class="toss-screen">
+        <div class="toss-option-scene">
+            <p>Choose an option to proceed to toss..</p>
+            <button data-value="odd">odd</button>
+            <button data-value="even">even</button>
+            <button data-value="idk">idk</button>
+        </div>
+        <div class="toss-call-scene hide">
+            <p>Choose an option to toss..</p>
+            <button data-value="0">Stroke!</button>
+            <button data-value="1">1</button>
+            <button data-value="2">2</button>
+            <button data-value="3">3</button>
+            <button data-value="4">4</button>
+            <button data-value="5">5</button>
+            <button data-value="6">6</button>
+        </div>
+        <div class="toss-final-scene hide">
+            <p>Would you like to bat or bowl?</p>
+            <button data-value="bat">bat</button>
+            <button data-value="bowl">bowl</button>
+        </div>
+    </div>
+    <div class="play-screen">
+        <div class="play-scene hide">
+            <p>Let's play!</p>
+            <p class="player-playing hide">player playing..</p>
+            <p class="bot-playing hide">bot playing..</p>
+            <div class="run">
+                <p>player choose: <span class="player-run">0</span></p>
+                <p>bot choose: <span class="bot-run">0</span></p>
+            </div>
+            <button data-value="0">Stroke!</button>
+            <button data-value="1">1</button>
+            <button data-value="2">2</button>
+            <button data-value="3">3</button>
+            <button data-value="4">4</button>
+            <button data-value="5">5</button>
+            <button data-value="6">6</button>
+            <div class="score">
+                <p>player score: <span class="player-score">0</span></p>
+                <p>bot score: <span class="bot-score">0</span></p>
+            </div>
+        </div>
+    </div>
+    <div class="summary hide">
+        <p class="match-summary"></p>
+        <button class="restart">restart</button>
+    </div>
+    <script src="hand_cricket.js"></script>
+</body>
+
+</html>
